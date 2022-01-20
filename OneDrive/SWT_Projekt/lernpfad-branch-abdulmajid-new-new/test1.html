@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- to include the main js file -->
+    <script src="js/main.js"></script>
+    <!-- to include jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h3 id="savedText"></h3>
+    <h3 id="savedText2"></h3>
+
+    <input type="text" id="input" /><br />
+    <input type="text" id="input2" /><br />
+
+    <button onclick="save()">Submit</button>
+    <form action="test2.html">
+      <button onclick="getText()">Lernpfad Übersicht</button>
+    </form>
+    <div id="msg">
+      <pre id="pre"></pre>
+    </div>
+    <button id="btn">json Übersicht</button>
+  </body>
+  <script></script>
+</html>

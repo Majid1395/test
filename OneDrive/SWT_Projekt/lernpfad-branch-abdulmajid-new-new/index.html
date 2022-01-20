@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- /*--------------------------------------------------------start of the nav section ---------------------------------------*/ -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="logo" id="logo__container">
+          <a href="index.html">
+            <img id="navbar__logo" src="assets/logo-1.png" alt="logo" />
+          </a>
+          <a href="index.html" class="text__link">
+            <p class="img__par">iLernpfad</p>
+            <p class="img__par" id="par2">Planer</p>
+          </a>
+        </div>
+
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__links" id="signup">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /*--------------------------------------------------------enf of the nav section ---------------------------------------*/ -->
+
+    <!-- /*--------------------------------------------------------start of the hero section ---------------------------------------*/ -->
+    <div class="hero">
+      <div class="textHeroDiv">
+        <p class="hero__par1"><b>iLernpfad</b></p>
+        <p class="hero__par2">Planer</p>
+        <p class="hero__par3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+          sed do eiusmod tempor incididunt <br />ut labore et dolore. Ut enim
+          veniam, quis nostrud exercitation<br />
+          ullamco laboris nisi ut aliquip ex ea <br />commodo consequat. Duis
+          aute irure dolor i in voluptate velit essecillum<br />
+          dolore eu fugiat nulla pariatur. Excepteur sint occaec at cupidatat
+          non proident, sun<br />
+          t in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+      </div>
+
+      <div class="imgHeroDiv"></div>
+    </div>
+    <!-- /*--------------------------------------------------------end of the hero section ---------------------------------------*/ -->
+
+    <!-- /*--------------------------------------------------------start button to top section -------------*/ -->
+    <button id="totopbutton"><i class="fas fa-angle-double-up"></i></button>
+    <!-- /*--------------------------------------------------------end button to top section ---------------*/ -->
+
+    <!-- /*-----------------------start images of body home------------------------------ */ -->
+
+    <div class="services__wrapper">
+      <div class="item1">
+        <div class="img"></div>
+        <div class="text">
+          Füge Arbeitsaufträge und digitale<br />
+          Lernressourcen zu strukturierten<br />
+          Lernpfaden zusammen.
+        </div>
+      </div>
+
+      <div class="item2">
+        <div class="img"></div>
+        <div class="text">
+          Neue Ideen oder Informationen beschreiben, <br />
+          analysieren, bearbeiten und mitteilen. <br />
+        </div>
+      </div>
+
+      <div class="item3">
+        <div class="img"></div>
+        <div class="text">
+          Die Möglichkeit alle bearbeitete <br />
+          Arbeitsaufträge und beschriebene <br />
+          Lernpfaden herunterzuladen.
+        </div>
+      </div>
+    </div>
+
+    <!-- startButtons -->
+    <div class="get__started__button__div startButtonsContainer">
+      <input
+        class="startButtons"
+        type="button"
+        onclick="location.href='html/app.html'"
+        value="Neuen Lernpfad erstellen"
+      />
+      <input
+        class="startButtons"
+        type="button"
+        onclick="location.href=''"
+        value="Alten Lernpfad hochladen"
+      />
+    </div>
+
+    <!-- /*-----------------------end  images of body home------------------------------ */ -->
+
+    <!-- /*-----------------------------------------start footer ---------------------------------------*/ -->
+
+    <footer>
+      <div class="footer">
+        <div class="textfooter">
+          iLernpfad<br />
+          Planer
+        </div>
+
+        <div class="footerList">
+          <ul class="footer__menu1">
+            <li class="footer__item">
+              <a href="#consectetur" class="footer__links" id="consectetur"
+                >consectetur</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#nostrud" class="footer__links" id="nostrud">nostrud</a>
+            </li>
+            <li class="footer__item">
+              <a href="#tempor" class="footer__links" id="tempor">tempor</a>
+            </li>
+          </ul>
+
+          <ul class="footer__menu2">
+            <li class="footer__item">
+              <a href="#about" class="footer__links" id="aboutFooter"
+                >About us</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#contact" class="footer__links" id="signupFooter"
+                >Contact Us</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#Affiliates" class="footer__links" id="Affiliates"
+                >Affiliates</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="#Resources" class="footer__links" id="Resources"
+                >Resources</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- /*-----------------------------------------end footer ---------------------------------------*/ -->
+    <script src="../js/home.js"></script>
+  </body>
+</html>

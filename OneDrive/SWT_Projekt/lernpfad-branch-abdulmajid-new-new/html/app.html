@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js" integrity="sha512-1aNp9qKP+hKU/VJwCtYqJP9tdZWbMDN5pEEXXoXT0pTAxZq1HHZhNBR/dtTNSrHO4U1FsFGGILbqG1O9nl8Mdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css" integrity="sha512-KuSX+43gVS5MEIJD2ewtrFPOHqC1PJnL8o2f5ciggPC0JUZ8XV0QXlfArO1mSzKkVFdRjsBDfrTU96C5SuRfqQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script
+    src="http://cloud.tinymce.com/stable/tinymce.min.js?apiKey=[mj4m6ziy432rhwjc5qpjbgc21pom986wg64le2agq3olks5x]"></script>
+  <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+ 
+  <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title></title>
+</head>
+<body>
+  <!-- /*--------------------------------------------------------start of the nav section ---------------------------------------*/ -->
+
+  <div id="backgroundPage">
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="logo" id="logo__container">
+          <a href="../index.html">
+            <img id="navbar__logo" src="../assets/logo-1.png" alt="logo" />
+          </a>
+          <a href="../index.html" class="text__link">
+            <p class="img__par">iLernpfad</p>
+            <p class="img__par" id="par2">Planer</p>
+          </a>
+        </div>
+
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="aboutNAV">About us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__links" id="signupNAV">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /*--------------------------------------------------------enf of the nav section ---------------------------------------*/ -->
+    <!-- /*--------------------------------------------------------start of the einstellung ---------------------------------------*/ -->
+
+    <div class="einstellung-container"> <i class="fas fa-cogs fa-5x einstellung" id="open-popup-btn"></i></div>
+    
+    
+    <!-- /*--------------------------------------------------------end of the einstellung ---------------------------------------*/ -->
+
+    <!-- /*--------------------------------------------------------start of the textarbeitsbereichen ---------------------------------------*/ -->
+    <div class="main_main_container" id = "main_main" >
+     <div class="left_parent_container ">
+         <div class="left_main_buttons_container"  >
+          <button class="buttonsSzenario " id = "UrlBtn" >URL</button>
+          <button class="buttonsSzenario " id = "FragstammBtn" >Fragstamm</button>
+          <button class="buttonsSzenario " id = "TextBtn">Text</button>
+          <button class="buttonsSzenario " id = "NotizenBtn">Notizen</button>
+        </div>
+        <div class="left_main_container" id = "left_main">
+        </div>
+        </div>
+      <div class="middle_main_container" >
+
+        <div class="textarbeitsbereichen">
+          <div class="bereich1">
+            <h5>Thema Beschreibung </h5>
+            <br />
+            <textarea id="editor_thema_beschreibung"></textarea>
+          </div>
+
+          <div class="line" id></div>
+
+
+
+          <div class="line" id="line2"></div>
+
+          <div class="bereich3">
+            <h5>Lernziele Beschreibung </h5>
+            <br />
+            <textarea id="editor_lernziele_beschreibung"></textarea>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- /*--------------------------------------------------------end of the textarbeitsbereichen ---------------------------------------*/ -->
+        <div class="SzenarioAddierenContainer" >
+          <div class="Add">
+            <div class="TextDiv">Szenario Addieren</div>
+            <div class="AddIcon"></div>
+          </div>
+          <div class="Delete">
+            <div class="TextDiv">Letzte Szenario Löschen</div>
+            <div class="DeleteIcon"></div>
+          </div>
+        </div>
+        <!-- downloadButtonsContainer -->
+        <div class="downloadButtonsContainer">
+          <button class="downloadButtons"onclick="collect()"><span> als PDF exportieren </span></button>
+          <button class="downloadButtons"><span> als Json exportieren </span></button>
+      </div>
+        <!-- /*--------------------------------------------------- end of the Szenario Addieren ---------------------------------------*/ -->
+      </div>
+
+      <div class="right_main_container " id = "right_main">
+      </div>
+
+    </div>
+    <!-- /*-----------------------------------------start footer ---------------------------------------*/ -->
+
+
+    <footer id="ftr">
+      <div class="footer">
+        <div class="textfooter">
+          iLernpfad<br />
+          Planer
+        </div>
+
+        <div class="footerList">
+          <ul class="footer__menu1">
+            <li class="footer__item">
+              <a href="#consectetur" class="footer__links" id="consectetur">consectetur</a>
+            </li>
+            <li class="footer__item">
+              <a href="#nostrud" class="footer__links" id="nostrud">nostrud</a>
+            </li>
+            <li class="footer__item">
+              <a href="#tempor" class="footer__links" id="tempor">tempor</a>
+            </li>
+          </ul>
+
+          <ul class="footer__menu2">
+            <li class="footer__item">
+              <a href="#about" class="footer__links" id="aboutFooter">About us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#contact" class="footer__links" id="signupFooter">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#Affiliates" class="footer__links" id="Affiliates">Affiliates</a>
+            </li>
+            <li class="footer__item">
+              <a href="#Resources" class="footer__links" id="Resources">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- /*-----------------------------------------end footer ---------------------------------------*/ -->
+
+
+
+  <!-- /*-----------------------------------------start  Einstellung ---------------------------------------*/ -->
+
+  <div class="tabs" id="tabsId">
+
+    <div class="tabs__container" id="tabs__container__id">
+
+      <div class="tab__header" id="tab__headerId">
+        <div class="active"><i class="fas fa-globe"></i>global</div>
+        <div><i class="fas fa-cubes"></i>H5P</div>
+        <div><i class="fas fa-brain"></i>moodle</div>
+        <div><i class="fab fa-affiliatetheme"></i>ILIAS</div>
+        <div><i class="fab fa-atlassian"></i></fab>adobe Captivate</div>
+        <div><i class="fas fa-vr-cardboard"></i>3d vista</div>
+        <div id="materialHeader" style="color: #4b5af3;"><i class="fas fa-vr-cardboard"></i>Material <div
+            class="tab__indicatorMaterial"></div>
+        </div>
+      </div>
+
+      <div class="tab__indicator1"></div>
+      <div class="tab__body">
+
+        <div class="mainDiv" id="containerDiv">
+          <!-- <ul>
+         </ul> -->
+        </div>
+
+        <div class="toolsContainer" id="toolsContainerId">
+
+          <div class="iconCotainer" id="iconsCotainer">
+            <div title="neue Interaktion hinzufügen">
+              <i class="fas fa-plus fa-lg toolsBtn" id="addButton"></i>
+            </div>
+
+            <div id="inputFeldContainer">
+            </div>
+            <div id="submitBtnContainer" title="Interaktion hinzufügen">
+
+            </div>
+            <div>
+              <i class="fas fa-eye fa-lg toolsBtn" id="eyeButton" title="Interaktionen ein/ausblenden"></i>
+            </div>
+            <div>
+              <i class="fas fa-check-double fa-lg toolsBtn" id="selectAllBtn" title="alle auswählen"></i>
+            </div>
+            <div>
+              <i class="far fa-trash-alt fa-lg toolsBtn" id="deleteBtn" title="Interaktion löschen"></i>
+            </div>
+            <div>
+              <i class="fas fa-undo fa-lg toolsBtn" id="undoBtn" title="zurücksetzen"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="dismiss-btn">
+          <button id="dismiss-popup-btn">bestätigen</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="materialInter__container">
+      <button id="interaktion">Interaktionen</button>
+      <button id="material">Material</button>
+      <button id="modal-btn">Hochladen</button>
+      <button class="download-btn" id="down-btn">herunterladen</button>
+
+
+    </div>
+  </div>
+
+  <!-- Json file Hoch-herunterladen begin -->
+
+  <div id="my-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h4>Alte Einstellungen hochladen</h4>
+      </div>
+      <div class="modal-body">
+
+        <!--       Drag & Drop or Browse: File Upload             -->
+        <div class="drag-area">
+          <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <header>Drag & Drop to Upload File</header>
+          <span>OR</span>
+          <button id="upload-btn">Browse File</button>
+          <input type="file" id="upload" accept=".json" hidden>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /*-----------------------------------------end  Einstellung ---------------------------------------*/ -->
+
+  <script src="../js/home.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
